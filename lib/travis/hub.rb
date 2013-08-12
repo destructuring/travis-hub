@@ -7,7 +7,6 @@ require 'travis/support/amqp'
 require 'travis/hub/queue'
 require 'travis/hub/error'
 require 'core_ext/kernel/run_periodically'
-require 'jruby-openssl'
 require 'raven'
 
 $stdout.sync = true
