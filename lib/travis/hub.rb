@@ -25,6 +25,7 @@ module Travis
       Travis::Async::Sidekiq.setup(Travis.config.redis.url, Travis.config.sidekiq)
 
       Travis::Exceptions::Reporter.start
+      Travis::Metrics.setup
       Travis::Notification.setup
       Travis::Addons.register
 

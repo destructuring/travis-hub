@@ -22,7 +22,8 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-core.git
-  revision: aad693ffa504c7fe3ea79124039ce49328a6fc65
+  revision: 89b65f97ef0ffd00dd36ba38645034c8bcc0e250
+  branch: sf-te
   specs:
     travis-core (0.0.1)
       actionmailer (~> 3.2.12)
@@ -33,7 +34,7 @@ GIT
       hashr (~> 0.0.19)
       metriks (~> 0.9.7)
       multi_json
-      pusher (~> 0.11.0)
+      pusher (~> 0.12.0)
       railties (~> 3.2.12)
       rake
       redis (~> 3.0)
@@ -51,7 +52,8 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-support.git
-  revision: 7c69fe727968b31551ce3acbe0d4f2e0e5bc8fa3
+  revision: 243147664e49a168b0c2d3c40c04a786bf664f37
+  branch: sf-te
   specs:
     travis-support (0.0.1)
 
@@ -88,10 +90,9 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.2)
-    atomic (1.1.10)
-    atomic (1.1.10-java)
+    atomic (1.1.14-java)
     avl_tree (1.1.3)
-    backports (3.3.5)
+    backports (3.3.4)
     bouncy-castle-java (1.5.0147)
     builder (3.0.4)
     celluloid (0.12.4)
@@ -108,7 +109,7 @@ GEM
     database_cleaner (0.8.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    facter (1.7.3)
+    facter (1.7.2)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     ffi (1.9.3)
@@ -132,14 +133,14 @@ GEM
     hashie (2.0.5)
     hashr (0.0.22)
     hike (1.2.3)
-    hitimes (1.2.1)
     hitimes (1.2.1-java)
-    i18n (0.6.9)
-    jdbc-postgres (9.2.1004)
+    hot_bunnies (1.4.0-java)
+    httpclient (2.3.4.1)
+    i18n (0.6.5)
+    jdbc-postgres (9.2.1002.1)
     journey (1.0.4)
     jruby-openssl (0.8.10)
       bouncy-castle-java (>= 1.5.0147)
-    json (1.8.0)
     json (1.8.0-java)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
@@ -157,10 +158,10 @@ GEM
       avl_tree (~> 1.1.2)
       hitimes (~> 1.1)
     micro_migrations (0.0.1)
-    mime-types (1.23)
+    mime-types (1.25)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
-    multi_json (1.8.2)
+    multi_json (1.8.0)
     multipart-post (1.2.0)
     net-http-persistent (2.9)
     net-http-pipeline (1.0.1)
@@ -176,7 +177,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
       spoon (~> 0.0)
-    pusher (0.11.3)
+    pusher (0.12.0)
+      httpclient (~> 2.3.0)
       multi_json (~> 1.0)
       signature (~> 0.1.6)
     rack (1.4.5)
