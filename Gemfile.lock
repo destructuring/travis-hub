@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/getsentry/raven-ruby.git
-  revision: f6c79103e1ff07abc8a1863b5d2ec43d9527e0ed
+  revision: a524ba2659ed4a4dd7659df7b69604fde9d10059
   specs:
     sentry-raven (0.6.0)
       faraday (>= 0.7.6)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-core.git
-  revision: 89b65f97ef0ffd00dd36ba38645034c8bcc0e250
+  revision: f5b86c7e15bd8cb31c3e9872ebcb3f9de4cde29f
   branch: sf-te
   specs:
     travis-core (0.0.1)
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-support.git
-  revision: 243147664e49a168b0c2d3c40c04a786bf664f37
+  revision: b5e9383e54a459c46a93b7971e64fc1851bbce4a
   branch: sf-te
   specs:
     travis-support (0.0.1)
@@ -60,12 +60,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (3.2.16)
-      actionpack (= 3.2.16)
+    actionmailer (3.2.15)
+      actionpack (= 3.2.15)
       mail (~> 2.5.4)
-    actionpack (3.2.16)
-      activemodel (= 3.2.16)
-      activesupport (= 3.2.16)
+    actionpack (3.2.15)
+      activemodel (= 3.2.15)
+      activesupport (= 3.2.15)
       builder (~> 3.0.0)
       erubis (~> 2.7.0)
       journey (~> 1.0.4)
@@ -73,26 +73,26 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    activemodel (3.2.16)
-      activesupport (= 3.2.16)
+    activemodel (3.2.15)
+      activesupport (= 3.2.15)
       builder (~> 3.0.0)
-    activerecord (3.2.16)
-      activemodel (= 3.2.16)
-      activesupport (= 3.2.16)
+    activerecord (3.2.15)
+      activemodel (= 3.2.15)
+      activesupport (= 3.2.15)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
     activerecord-jdbc-adapter (1.2.9.1)
     activerecord-jdbcpostgresql-adapter (1.2.9)
       activerecord-jdbc-adapter (~> 1.2.9)
       jdbc-postgres (>= 9.1, < 9.3)
-    activesupport (3.2.16)
+    activesupport (3.2.15)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.2)
     atomic (1.1.14-java)
     avl_tree (1.1.3)
-    backports (3.3.4)
+    backports (3.3.5)
     bouncy-castle-java (1.5.0147)
     builder (3.0.4)
     celluloid (0.12.4)
@@ -109,11 +109,10 @@ GEM
     database_cleaner (0.8.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    facter (1.7.2)
+    facter (1.7.3)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    ffi (1.9.3)
-    ffi (1.9.3-java)
+    ffi (1.9.0-java)
     formatador (0.2.4)
     gh (0.13.0)
       addressable
@@ -134,14 +133,13 @@ GEM
     hashr (0.0.22)
     hike (1.2.3)
     hitimes (1.2.1-java)
-    hot_bunnies (1.4.0-java)
     httpclient (2.3.4.1)
     i18n (0.6.5)
     jdbc-postgres (9.2.1002.1)
     journey (1.0.4)
     jruby-openssl (0.8.10)
       bouncy-castle-java (>= 1.5.0147)
-    json (1.8.0-java)
+    json (1.8.1-java)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -150,7 +148,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    march_hare (2.0.0.rc4-java)
+    march_hare (2.0.0.rc3-java)
     metaclass (0.0.1)
     method_source (0.8.2)
     metriks (0.9.9.5)
@@ -161,19 +159,14 @@ GEM
     mime-types (1.25)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
-    multi_json (1.8.0)
+    multi_json (1.8.2)
     multipart-post (1.2.0)
     net-http-persistent (2.9)
     net-http-pipeline (1.0.1)
     newrelic_rpm (3.4.2.1)
     polyglot (0.3.3)
-    proxies (0.2.1)
-    pry (0.9.12.3)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
-      slop (~> 3.4)
-    pry (0.9.12.3-java)
-      coderay (~> 1.0)
+    pry (0.9.12.2-java)
+      coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
       spoon (~> 0.0)
@@ -188,9 +181,9 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    railties (3.2.16)
-      actionpack (= 3.2.16)
-      activesupport (= 3.2.16)
+    railties (3.2.15)
+      actionpack (= 3.2.15)
+      activesupport (= 3.2.15)
       rack-ssl (~> 1.3.2)
       rake (>= 0.8.7)
       rdoc (~> 3.4)
@@ -214,7 +207,7 @@ GEM
     rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.7.0)
-    safe_yaml (0.9.5)
+    safe_yaml (0.9.7)
     sidekiq (2.8.0)
       celluloid (~> 0.12.0)
       connection_pool (~> 1.0)
@@ -256,6 +249,7 @@ DEPENDENCIES
   guard
   guard-rspec
   jruby-openssl (~> 0.8.8)
+  march_hare (~> 2.0.0.rc2)
   micro_migrations
   mocha (~> 0.10.0)
   newrelic_rpm (~> 3.4.2)
