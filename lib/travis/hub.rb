@@ -31,6 +31,8 @@ module Travis
 
       Travis::Memory.new(:hub).report_periodically if Travis.env == 'production' && Travis.config.metrics.report
       NewRelic.start if File.exists?('config/newrelic.yml')
+
+      declare_exchanges_and_queues
     end
 
     def run
@@ -54,6 +56,12 @@ module Travis
             Travis.logger.log_exception(e)
           end
         end
+      end
+
+      def declare_exchanges_and_queues
+        channel = Travis::Amqp.connection.create_channel
+        channel.exchange 'reporting', durable: true, auto_delete: false, type: :topic
+        channel.queue 'builds.linux', durable: true, exclusive: false
       end
   end
 end
