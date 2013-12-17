@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3', engine: 'jruby', engine_version: '1.7.6'
+ruby '1.9.3', engine: 'jruby', engine_version: '1.7.9'
 
-gem 'travis-core',        github: 'travis-ci/travis-core'
+gem 'travis-core',        github: 'travis-ci/travis-core', branch: 'build-script-generation'
 gem 'travis-support',     github: 'travis-ci/travis-support'
 gem 'travis-sidekiqs',    github: 'travis-ci/travis-sidekiqs', require: nil
+gem 'travis-build',       github: 'travis-ci/travis-build'
 
 gem 'dalli'
 

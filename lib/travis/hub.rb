@@ -6,6 +6,7 @@ require 'travis/states_cache'
 require 'travis/support/amqp'
 require 'travis/hub/queue'
 require 'travis/hub/error'
+require 'travis/build'
 require 'core_ext/kernel/run_periodically'
 require 'raven'
 
